@@ -1,0 +1,40 @@
+{
+  "name": "home-agency-style-reen",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IamEmpty/home-agency-style-reen.git"
+  },
+  "author": "IamEmpty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IamEmpty/home-agency-style-reen/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-replace": "^0.5.4",
+    "gulp-stylus": "^2.0.7",
+    "gulp.spritesmith": "^6.0.0",
+    "merge-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "jade": "^1.11.0",
+    "stylus": "^0.53.0"
+  },
+  "description": "Just and one html layout",
+  "homepage": "https://github.com/IamEmpty/home-agency-style-reen#readme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "keywords": [
+    "jade",
+    "stylus"
+  ]
+}
