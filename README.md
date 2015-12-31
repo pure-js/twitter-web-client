@@ -1,7 +1,7 @@
 # twitter-web-client
 ## Task
-Необходимо создать одностраничное web-приложение.
-Используя API twitter`a загрузить 101 пост, по тегу #wrike.
+Необходимо создать ine page web app.
+Using Twitter API load 101 tweet, by #wrike hashtag.
 Оформить загруженное в адаптивную сетку .
 Если у поста есть картинка, нужно добавить её в качестве background`a к ячейке.
 ## Specs
