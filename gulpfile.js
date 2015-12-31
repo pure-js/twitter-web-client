@@ -11,10 +11,10 @@ var gulp = require('gulp'),
   merge = require('merge-stream');
 
 var paths = {
-  jade: 'pages/*.jade',
+  jade: 'index.jade',
   jadeWatch: [
     'blocks/**/*.jade',
-    'pages/*.jade'
+    'index.jade'
   ],
   stylus: [
     'stylesheets/main.styl',
@@ -26,6 +26,7 @@ var paths = {
   ],
   images: 'img/**/*.{png,jpg}',
   css: 'bower_components/normalize.css/normalize.css',
+  js: 'js/**/*.js',
   build: 'build/',
   dist: 'dist/'
 };
@@ -72,18 +73,28 @@ gulp.task('minify-html', ['minify-css'], function() {
     .pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('copy', ['copy-images']);
+gulp.task('copy', ['copy-images', 'copy-js']);
 
 gulp.task('copy-images', function() {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.build + 'img/'));
 });
 
-gulp.task('copy-to-dist', ['copy-images-to-dist']);
+gulp.task('copy-js', function() {
+  return gulp.src(paths.js)
+    .pipe(gulp.dest(paths.build + 'js/'));
+});
+
+gulp.task('copy-to-dist', ['copy-images-to-dist', 'copy-js-to-dist']);
 
 gulp.task('copy-images-to-dist', function() {
   return gulp.src(paths.images)
     .pipe(gulp.dest(paths.dist + 'img/'));
+});
+
+gulp.task('copy-js-to-dist', function() {
+  return gulp.src(paths.js)
+    .pipe(gulp.dest(paths.dist + 'js/'));
 });
 
 gulp.task('sprite', function () {
@@ -114,6 +125,7 @@ gulp.task('sprite', function () {
 gulp.task('watch', function() {
   gulp.watch(paths.stylusWatch, ['css']);
   gulp.watch(paths.jadeWatch, ['html']);
+  gulp.watch(paths.js, ['copy-js']);
 });
 
 gulp.task('deploy', ['dist'], function() {
