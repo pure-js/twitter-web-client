@@ -3,6 +3,12 @@ html(lang= 'en')
   head
     title Twitter API
     meta(charset= 'utf-8')
+    //- script(src= 'https://api.twitter.com/1.1/search/tweets.json?q=%23wrike&result_type=recent&callback=tweets', type= 'application/javascript')
     script(src= 'js/twitter.js', type= 'text/javascript')
   body
-    div cord
+    .tweets
+      .tweet
+        .tweet__user-name
+        .tweet__user-picture
+        .tweet__time
+        .tweet__text

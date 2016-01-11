@@ -1,26 +1,24 @@
 'use strict'
 
-var link = 'https://api.twitter.com/oauth2/token';
+console.log(tweets);
 
-var consumerKey = prompt('Please enter your consumer key');
-var consumerSecret = prompt('Please enter your consumerSecret');
+var leggedAuth = function() {
+  var url = 'https://api.twitter.com/oauth/authorize';
+  var oauthToken = '10168638-cjQDsZbNSEvGOih33pBpdz2Bw4u2aj4UzItQ07i';
+  var request = url + '?oauth_token=' + oauthToken;
 
-// TODO RFC 1738 encoded
+  var xhr = new XMLHttpRequest();
 
-var keyAndSecret = consumerKey + ':' + consumerSecret;
-var encodedKeyAndSecret = window.btoa(keyAndSecret); // encode a string
-var authorizationValue = 'Basic ' + encodedKeyAndSecret;
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      console.log(xhr.status);
+      console.log(xhr.statusText);
+    }
+  };
 
-var xhr = new XMLHttpRequest();
+  xhr.open('GET', request, true);
+  xhr.setRequestHeader('Authorization', authorizationValue);
+  xhr.send();
 
-xhr.onreadystatechange = function() {
-  if (xhr.readyState == 4 && xhr.status == 200) {
-    console.log(xhr.status);
-    console.log(xhr.statusText);
-  }
+  console.log(565);
 };
-
-xhr.open('POST', link, true);
-xhr.setRequestHeader('Authorization', authorizationValue);
-xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded;charset=UTF-8');
-xhr.send('grant_type=client_credentials');
