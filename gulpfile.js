@@ -5,7 +5,7 @@ var gulp = require('gulp'),
   stylus = require('gulp-stylus'),
   plumber = require('gulp-plumber'),
   htmlmin = require('gulp-htmlmin'),
-  nano = require('gulp-cssnano'),
+  cleanCSS = require('gulp-clean-css'),
   spritesmith = require('gulp.spritesmith'),
   ghPages = require('gulp-gh-pages'),
   merge = require('merge-stream');
@@ -56,7 +56,7 @@ gulp.task('minify-css', function() {
     .pipe(stylus({
       'include css': true
     }))
-    .pipe(nano())
+    .pipe(cleanCSS())
     .pipe(gulp.dest(paths.dist + 'css/'));
 });
 

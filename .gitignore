@@ -7,3 +7,6 @@ dist/
 
 # Deploy
 .publish/
+
+# OS X
+.DS_Store
