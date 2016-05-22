@@ -11,22 +11,21 @@ var gulp = require('gulp'),
   merge = require('merge-stream');
 
 var paths = {
-  jade: 'index.jade',
+  jade: 'src/index.jade',
   jadeWatch: [
-    'blocks/**/*.jade',
-    'index.jade'
+    'src/index.jade'
   ],
   stylus: [
-    'stylesheets/main.styl',
-    'stylesheets/above-the-fold.styl'
+    'src/css/main.styl',
+    'src/css/above-the-fold.styl'
   ],
   stylusWatch: [
-    'blocks/**/*.styl',
-    'stylesheets/main.styl'
+    'src/blocks/**/*.styl',
+    'src/css/main.styl'
   ],
-  images: 'img/**/*.{png,jpg}',
+  images: 'assets/img/**/*.{png,jpg}',
   css: 'bower_components/normalize.css/normalize.css',
-  js: 'js/**/*.js',
+  js: 'src/js/*.js',
   build: 'build/',
   dist: 'dist/'
 };
