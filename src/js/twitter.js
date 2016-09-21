@@ -1,6 +1,6 @@
 'use strict'
 
-console.log(tweets);
+// console.log(tweets);
 
 var leggedAuth = function() {
   var url = 'https://api.twitter.com/oauth/authorize';
