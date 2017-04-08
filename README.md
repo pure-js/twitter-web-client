@@ -16,3 +16,8 @@ Pay attention to semantics and code readability.
 - Names of CSS selectors вы choose осознанно and can аргументировать your choice? An additional plus.
 - Did you love CSS transformations, transitions, web animations до состояния эпилепсии? We too. Feel free to use them to improve the user experience.
 - Header in header of header don't confuse you? Покажите как глубока кроличья нора HTML5 semantic, смело use all new tags, про которые прочитали на Хабре.
+## Running
+```
+npm i
+npm start
+```

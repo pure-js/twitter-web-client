@@ -1,23 +1,31 @@
 {
   "name": "twitter-web-client",
   "version": "0.0.2",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp dev",
+    "prod": "gulp prod",
+    "test": "gulp test",
+    "clean": "rm -rf build",
+    "clean-all": "rm -rf build node_modules"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IamEmpty/home-agency-style-reen.git"
+    "url": "git+https://github.com/pure-js/twitter-web-client.git"
   },
-  "author": "IamEmpty",
+  "author": "pure-js",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IamEmpty/home-agency-style-reen/issues"
+    "url": "https://github.com/pure-js/twitter-web-client/issues"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-clean-css": "^2.0.7",
+    "gulp-clean-css": "^3.0.4",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-htmlmin": "^2.0.0",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.0.1",
-    "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.0.1",
+    "gulp-pug": "^3.3.0",
     "gulp-replace": "^0.5.4",
     "gulp-stylus": "^2.2.0",
     "gulp.spritesmith": "^6.0.0",
@@ -25,21 +33,12 @@
     "request": "^2.67.0"
   },
   "dependencies": {
-    "http-proxy": "^1.13.3",
-    "jade": "^1.11.0",
-    "stylus": "^0.54.5"
+    "http-proxy": "^1.13.3"
   },
   "description": "Web client for twitter",
-  "homepage": "https://github.com/IamEmpty/home-agency-style-reen#readme",
+  "homepage": "https://pure-js.github.io/twitter-web-client/",
   "main": "src/js/twitter.js",
-  "scripts": {
-    "test": "gulp build",
-    "clean": "rm -rf build",
-    "clean-all": "rm -rf build node_modules"
-  },
   "keywords": [
-    "jade",
-    "stylus",
     "API",
     "twitter"
   ]

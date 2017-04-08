@@ -2,8 +2,8 @@
 
 // console.log(tweets);
 
-var leggedAuth = function() {
-  var url = 'https://api.twitter.com/oauth/authorize';
+function leggedAuth() {
+  let url = 'https://api.twitter.com/oauth/authorize';
   var oauthToken = '10168638-cjQDsZbNSEvGOih33pBpdz2Bw4u2aj4UzItQ07i';
   var request = url + '?oauth_token=' + oauthToken;
 
@@ -19,6 +19,4 @@ var leggedAuth = function() {
   xhr.open('GET', request, true);
   xhr.setRequestHeader('Authorization', authorizationValue);
   xhr.send();
-
-  console.log(565);
-};
+}
