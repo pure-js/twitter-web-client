@@ -1,7 +1,6 @@
 # Twitter web client
 ## The Task
-You should create a single-page application.
-Using Twitter API load 101 tweet, by #wrike hashtag.
+Single-page application, used Twitter API load 101 tweet, by #wrike hashtag.
 Arrange loaded into adaptive grid.
 If tweet has a background, you should add it as background to cell.
 ## Specifications
