@@ -10,11 +10,11 @@ Don't use CSS frameworks and ready solutions.
 Use javascript, html, css. (Preprocessors for almost anything are welcomed)
 Pay attention to semantics and code readability.
 ## Notes
-- Показательная демонстрация OOP головного мозга (Did you hear about Abstract Factory pattern?)
+- Demonstration of the OOP of the brain (Did you hear about Abstract Factory pattern?)
 - Do you know how to use CSS flexible boxes? Wonderful, use them all.
-- Names of CSS selectors вы choose осознанно and can аргументировать your choice? An additional plus.
-- Did you love CSS transformations, transitions, web animations до состояния эпилепсии? We too. Feel free to use them to improve the user experience.
-- Header in header of header don't confuse you? Покажите как глубока кроличья нора HTML5 semantic, смело use all new tags, про которые прочитали на Хабре.
+- Names of CSS selectors you choose consciously and can argue your choice? An additional plus.
+- Did you love CSS transformations, transitions, web animation to the state of epilepsy? We too. Feel free to use them to improve the user experience.
+- Header in header of header don't confuse you? Show how deep the rabbit hole is HTML5 semantic, feel free to use all new tags, about which you read on Habr.
 ## Running
 ```
 npm i
