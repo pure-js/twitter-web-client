@@ -5,7 +5,6 @@ Arrange loaded into adaptive grid.
 If tweet has a background, you should add it as background to cell.
 ## Specifications
 Breakpoints: 360, 720, 1024, 1366.
-Browser support: IE10+
 Don't use CSS frameworks and ready solutions.
 Use javascript, html, css. (Preprocessors for almost anything are welcomed)
 Pay attention to semantics and code readability.
