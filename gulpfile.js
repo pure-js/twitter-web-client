@@ -139,5 +139,5 @@ gulp.task('deploy', ['dist'], function () {
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('dev', ['html', 'css', 'watch', 'copy']);
-gulp.task('dist', ['minify-html', 'minify-css', 'copy-to-dist', 'sprite']);
+gulp.task('build', ['minify-html', 'minify-css', 'copy-to-dist', 'sprite']);
 gulp.task('default', ['dev']);

@@ -1,11 +1,14 @@
 {
   "name": "twitter-web-client",
   "version": "0.0.2",
+  "description": "Web client for twitter",
+  "homepage": "https://pure-js.github.io/twitter-web-client/",
+  "main": "src/js/twitter.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "start": "gulp",
     "dev": "gulp dev",
-    "prod": "gulp prod",
+    "build": "gulp build",
     "test": "gulp test",
     "clean": "rm -rf build",
     "clean-all": "rm -rf build node_modules"
@@ -38,11 +41,13 @@
     "http-proxy": "^1.13.3",
     "normalize.css": "^8.0.1"
   },
-  "description": "Web client for twitter",
-  "homepage": "https://pure-js.github.io/twitter-web-client/",
-  "main": "src/js/twitter.js",
   "keywords": [
     "API",
     "twitter"
-  ]
+  ],
+  "pnpm": {
+    "overrides": {
+      "graceful-fs": "^4.2.11"
+    }
+  }
 }

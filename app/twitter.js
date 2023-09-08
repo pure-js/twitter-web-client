@@ -42,7 +42,8 @@ var authentication = function () {
 
 var search = function () {
   var url = 'https://api.twitter.com/1.1/search/tweets.json';
-  var search_query = 'q=%23wrike';
+  const hashtag = 'wrike';
+  var search_query = `q=%23${hashtag}`;
   var result_type = 'result_type=recent';
   var count = 'count=100';
   var request = url + '?' + search_query + '&' + result_type + '&' + count;
