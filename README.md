@@ -2,14 +2,14 @@
 
 ## The Task
 
-Single-page application, used Twitter API load 101 tweet, by #wrike hashtag.
-Arrange loaded into adaptive grid.
-If tweet has a background, you should add it as background to cell.
+A single-page application that, using the Twitter API, retrives 101 tweets using the specified hashtag.
+Organize the recieved tweets into an adaptive grid.
+If the tweet has a background, you need to add it as background to the cell.
 
-## Specifications
+## Specification
 
 Breakpoints: 360, 720, 1024, 1366.
-Don't use CSS frameworks and ready solutions.
+Don't use CSS frameworks and off-the-shelf solutions.
 Use javascript, html, css. (Preprocessors for almost anything are welcomed)
 Pay attention to semantics and code readability.
 
@@ -19,7 +19,7 @@ Pay attention to semantics and code readability.
 - Do you know how to use CSS flexible boxes? Wonderful, use them all.
 - Names of CSS selectors you choose consciously and can argue your choice? An additional plus.
 - Did you love CSS transformations, transitions, web animation to the state of epilepsy? We too. Feel free to use them to improve the user experience.
-- Header in header of header don't confuse you? Show how deep the rabbit hole is HTML5 semantic, feel free to use all new tags, about which you read on Habr.
+- Header in header of header don't confuse you? Show how deep the rabbit hole of HTML5 semantic is, feel free to use all the new tags you've read about.
 
 ## Running
 
