@@ -24,7 +24,7 @@ const paths = {
     'src/css/main.styl'
   ],
   images: 'assets/img/**/*.{png,jpg}',
-  css: 'bower_components/normalize.css/normalize.css',
+  css: 'node_modules/normalize.css/normalize.css',
   js: 'src/js/*.js',
   build: 'build/',
   dist: 'dist/'

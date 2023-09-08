@@ -33,7 +33,8 @@
     "request": "^2.67.0"
   },
   "dependencies": {
-    "http-proxy": "^1.13.3"
+    "http-proxy": "^1.13.3",
+    "normalize.css": "^8.0.1"
   },
   "description": "Web client for twitter",
   "homepage": "https://pure-js.github.io/twitter-web-client/",
