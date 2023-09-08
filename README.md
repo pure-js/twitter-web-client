@@ -16,6 +16,6 @@ Pay attention to semantics and code readability.
 - Header in header of header don't confuse you? Show how deep the rabbit hole is HTML5 semantic, feel free to use all new tags, about which you read on Habr.
 ## Running
 ```
-npm i
-npm start
+pnpm i
+pnpm start
 ```
