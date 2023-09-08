@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // console.log(tweets);
 
@@ -9,7 +9,7 @@ function leggedAuth() {
 
   var xhr = new XMLHttpRequest();
 
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       console.log(xhr.status);
       console.log(xhr.statusText);
