@@ -1,0 +1,34 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    ignore:
+      - dependency-name: '*'
+        update-types: ['version-update:semver-patch']
+    groups:
+      react-dependencies:
+        patterns:
+          - 'react*'
+          - '@types/react*'
+        exclude-patterns:
+          - 'react-router-dom'
+          - 'react-scripts'
+          - 'react-redux'
+      storybook-group:
+        patterns:
+          - 'storybook'
+          - '@storybook/*'
+      eslint-group:
+        patterns:
+          - 'eslint*'
+          - '@typescript-eslint/*'
+      redux-group:
+        patterns:
+          - 'redux*'
+          - 'react-redux'
+      material-ui-group:
+        patterns:
+          - '@material-ui*'
