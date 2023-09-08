@@ -1,8 +1,4 @@
-'use strict';
-
-// console.log(tweets);
-
-function leggedAuth() {
+export function leggedAuth() {
   let url = 'https://api.twitter.com/oauth/authorize';
   var oauthToken = '10168638-cjQDsZbNSEvGOih33pBpdz2Bw4u2aj4UzItQ07i';
   var request = url + '?oauth_token=' + oauthToken;

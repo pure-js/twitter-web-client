@@ -1,7 +1,7 @@
 var request = require('request'),
   fs = require('fs');
 
-var authentication = function () {
+export var authentication = function () {
   var url = 'https://api.twitter.com/oauth2/token';
 
   var consumerKey = process.argv[2]; // Twitter consumer key
