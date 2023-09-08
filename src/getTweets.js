@@ -1,11 +1,9 @@
-var request = require('request'),
-  fs = require('fs');
 
-export var authentication = function () {
-  var url = 'https://api.twitter.com/oauth2/token';
+export const authentication = function (consumerKey, consumerSecret) {
+  const url = 'https://api.twitter.com/oauth2/token';
 
-  var consumerKey = process.argv[2]; // Twitter consumer key
-  var consumerSecret = process.argv[3]; // Twitter consumer secret
+  // Twitter consumer key
+  // Twitter consumer secret
   var keyAndSecret = consumerKey + ':' + consumerSecret;
   var encodedKeyAndSecret = new Buffer(keyAndSecret).toString('base64'); // encode a string
   var authorizationValue = 'Basic ' + encodedKeyAndSecret;
@@ -35,14 +33,13 @@ export var authentication = function () {
     }
   }
 
-  request(options, callback);
+  fetch(options, callback);
 
   return auth;
 };
 
-var search = function () {
+var search = function (hashtag = 'wrike') {
   var url = 'https://api.twitter.com/1.1/search/tweets.json';
-  const hashtag = 'wrike';
   var search_query = `q=%23${hashtag}`;
   var result_type = 'result_type=recent';
   var count = 'count=100';
@@ -57,8 +54,6 @@ var search = function () {
       Authorization: authorization,
     },
   };
-
-  var data = {};
 
   function callback(error, response, body) {
     if (!error && response.statusCode == 200) {

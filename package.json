@@ -3,14 +3,14 @@
   "version": "0.0.2",
   "description": "Web client for twitter",
   "homepage": "https://pure-js.github.io/twitter-web-client/",
-  "main": "src/js/twitter.js",
+  "main": "src/twitter.js",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "start": "gulp",
     "dev": "gulp dev",
     "build": "gulp build",
     "test": "gulp test",
-    "lint": "eslint src/ app/",
+    "lint": "eslint src/",
     "clean": "rm -rf build",
     "clean-all": "rm -rf build node_modules"
   },

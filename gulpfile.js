@@ -17,7 +17,7 @@ const paths = {
   stylusWatch: ['src/blocks/**/*.styl', 'src/css/main.styl'],
   images: 'assets/img/**/*.{png,jpg}',
   css: 'node_modules/normalize.css/normalize.css',
-  js: 'src/js/*.js',
+  js: 'src/*.js',
   build: 'build/',
   dist: 'dist/',
 };
