@@ -10,7 +10,7 @@ If the tweet has a background, you need to add it as background to the cell.
 
 Breakpoints: 360, 720, 1024, 1366.
 Don't use CSS frameworks and off-the-shelf solutions.
-Use javascript, html, css. (Preprocessors for almost anything are welcomed)
+Use TypeScript, HTML and CSS. (Preprocessors for almost anything are welcomed)
 Pay attention to semantics and code readability.
 
 ## Notes
