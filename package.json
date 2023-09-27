@@ -1,11 +1,16 @@
 {
   "name": "twitter-web-client",
   "version": "0.0.2",
+  "description": "Web client for twitter",
+  "homepage": "https://pure-js.github.io/twitter-web-client/",
+  "main": "src/twitter.js",
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "gulp",
     "dev": "gulp dev",
-    "prod": "gulp prod",
+    "build": "gulp build",
     "test": "gulp test",
+    "lint": "eslint src/",
     "clean": "rm -rf build",
     "clean-all": "rm -rf build node_modules"
   },
@@ -19,6 +24,10 @@
     "url": "https://github.com/pure-js/twitter-web-client/issues"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.48.0",
+    "eslint-config-prettier": "^9.0.0",
     "gulp": "^3.9.0",
     "gulp-clean-css": "^3.0.4",
     "gulp-gh-pages": "^0.5.4",
@@ -30,16 +39,21 @@
     "gulp-stylus": "^2.2.0",
     "gulp.spritesmith": "^6.0.0",
     "merge-stream": "^1.0.0",
-    "request": "^2.67.0"
+    "prettier": "3.0.3",
+    "request": "^2.67.0",
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "http-proxy": "^1.13.3"
+    "http-proxy": "^1.13.3",
+    "normalize.css": "^8.0.1"
   },
-  "description": "Web client for twitter",
-  "homepage": "https://pure-js.github.io/twitter-web-client/",
-  "main": "src/js/twitter.js",
   "keywords": [
     "API",
     "twitter"
-  ]
+  ],
+  "pnpm": {
+    "overrides": {
+      "graceful-fs": "^4.2.11"
+    }
+  }
 }
